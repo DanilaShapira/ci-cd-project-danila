@@ -74,4 +74,4 @@ jobs:
       - name: Health check via Nginx
         run: |
           sleep 3
-    curl -f http://localhost/health 
+          curl -f http://localhost/health || exit 1
